@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "66f051ce75fa92ed1ab4f28a"
+  },
+  "user_id": 1,
+  "problems": 180
+},
+{
+  "_id": {
+    "$oid": "66f051ce75fa92ed1ab4f28b"
+  },
+  "user_id": 2,
+  "problems": 125
+},
+{
+  "_id": {
+    "$oid": "66f051ce75fa92ed1ab4f28c"
+  },
+  "user_id": 3,
+  "problems": 87
+},
+{
+  "_id": {
+    "$oid": "66f051ce75fa92ed1ab4f28d"
+  },
+  "user_id": 4,
+  "problems": 70
+},
+{
+  "_id": {
+    "$oid": "66f051ce75fa92ed1ab4f28e"
+  },
+  "user_id": 5,
+  "problems": 87
+},
+{
+  "_id": {
+    "$oid": "66f051ce75fa92ed1ab4f28f"
+  },
+  "user_id": 6,
+  "problems": 250
+},
+{
+  "_id": {
+    "$oid": "66f051ce75fa92ed1ab4f290"
+  },
+  "user_id": 7,
+  "problems": 140
+},
+{
+  "_id": {
+    "$oid": "66f051ce75fa92ed1ab4f291"
+  },
+  "user_id": 8,
+  "problems": 420
+},
+{
+  "_id": {
+    "$oid": "66f051ce75fa92ed1ab4f292"
+  },
+  "user_id": 9,
+  "problems": 350
+},
+{
+  "_id": {
+    "$oid": "66f051ce75fa92ed1ab4f293"
+  },
+  "user_id": 10,
+  "problems": 170
+}]

@@ -1,0 +1,13 @@
+db.getCollection('Mentors').aggregate(
+  [
+    { $match: { mentee_count: { $gte: 15 } } },
+    {
+      $project: {
+        _id: 0,
+        mentor_id: 0,
+        mentee_count: 0
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);

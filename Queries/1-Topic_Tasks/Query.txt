@@ -1,0 +1,55 @@
+db.getCollection('Topics').aggregate(
+  [
+    {
+      $lookup: {
+        from: 'Tasks',
+        localField: 'topic_id',
+        foreignField: 'topic_id',
+        as: 'taskinfo'
+      }
+    },
+    {
+      $match: {
+        $and: [
+          {
+            $or: [
+              {
+                topic_date: {
+                  $gt: ISODate(
+                    '2020-09-30T00:00:00.000Z'
+                  )
+                }
+              },
+              {
+                topic_date: {
+                  $lt: ISODate(
+                    '2020-11-01T00:00:00.000Z'
+                  )
+                }
+              }
+            ]
+          },
+          {
+            $or: [
+              {
+                'taskinfo.due_date': {
+                  $gt: ISODate(
+                    '2020-09-30T00:00:00.000Z'
+                  )
+                }
+              },
+              {
+                'taskinfo.due_date': {
+                  $lt: ISODate(
+                    '2020-11-01T00:00:00.000Z'
+                  )
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);

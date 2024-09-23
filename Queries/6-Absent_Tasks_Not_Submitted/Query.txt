@@ -1,0 +1,72 @@
+db.getCollection('Attendance').aggregate(
+  [
+    {
+      $lookup: {
+        from: 'Topics',
+        localField: 'topic_id',
+        foreignField: 'topic_id',
+        as: 'Topics'
+      }
+    },
+    {
+      $lookup: {
+        from: 'Tasks',
+        localField: 'topic_id',
+        foreignField: 'topic_id',
+        as: 'Tasks'
+      }
+    },
+    {
+      $match: {
+        $and: [
+          { attended: false },
+          { 'Tasks.submitted': false }
+        ]
+      }
+    },
+    {
+      $match: {
+        $and: [
+          {
+            $or: [
+              {
+                'Topics.topic_date': {
+                  $gte: ISODate(
+                    '2020-10-15T00:00:00.000Z'
+                  )
+                }
+              },
+              {
+                'Topics.topic_date': {
+                  $lte: ISODate(
+                    '2020-10-31T00:00:00.000Z'
+                  )
+                }
+              }
+            ]
+          },
+          {
+            $or: [
+              {
+                'Tasks.due_date': {
+                  $gte: ISODate(
+                    '2020-10-15T00:00:00.000Z'
+                  )
+                }
+              },
+              {
+                'Tasks.due_date': {
+                  $lte: ISODate(
+                    '2020-10-31T00:00:00.000Z'
+                  )
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    { $count: 'No_of_students_absent' }
+  ],
+  { maxTimeMS: 60000, allowDiskUse: true }
+);

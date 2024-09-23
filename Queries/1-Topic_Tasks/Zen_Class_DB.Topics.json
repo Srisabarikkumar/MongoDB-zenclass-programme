@@ -1,0 +1,190 @@
+[{
+  "_id": {
+    "$oid": "66f0528975fa92ed1ab4f294"
+  },
+  "topic_id": 1,
+  "topic": "Html",
+  "topic_date": {
+    "$date": "2020-10-14T18:30:00.000Z"
+  },
+  "taskinfo": [
+    {
+      "_id": {
+        "$oid": "66f0533e75fa92ed1ab4f2a3"
+      },
+      "task_id": 1,
+      "topic_id": 1,
+      "user_id": 1,
+      "task": "Html task",
+      "due_date": {
+        "$date": "2020-09-30T18:30:00.000Z"
+      },
+      "submitted": true
+    },
+    {
+      "_id": {
+        "$oid": "66f0533e75fa92ed1ab4f2a8"
+      },
+      "task_id": 1,
+      "topic_id": 1,
+      "user_id": 6,
+      "task": "Html task",
+      "due_date": {
+        "$date": "2020-10-01T18:30:00.000Z"
+      },
+      "submitted": false
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66f0528975fa92ed1ab4f295"
+  },
+  "topic_id": 2,
+  "topic": "Css",
+  "topic_date": {
+    "$date": "2020-10-18T18:30:00.000Z"
+  },
+  "taskinfo": [
+    {
+      "_id": {
+        "$oid": "66f0533e75fa92ed1ab4f2a4"
+      },
+      "task_id": 2,
+      "topic_id": 2,
+      "user_id": 2,
+      "task": "Css task",
+      "due_date": {
+        "$date": "2020-10-03T18:30:00.000Z"
+      },
+      "submitted": true
+    },
+    {
+      "_id": {
+        "$oid": "66f0533e75fa92ed1ab4f2a9"
+      },
+      "task_id": 2,
+      "topic_id": 2,
+      "user_id": 7,
+      "task": "Css task",
+      "due_date": {
+        "$date": "2020-10-06T18:30:00.000Z"
+      },
+      "submitted": true
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66f0528975fa92ed1ab4f296"
+  },
+  "topic_id": 3,
+  "topic": "Javascript",
+  "topic_date": {
+    "$date": "2020-10-23T18:30:00.000Z"
+  },
+  "taskinfo": [
+    {
+      "_id": {
+        "$oid": "66f0533e75fa92ed1ab4f2a5"
+      },
+      "task_id": 3,
+      "topic_id": 3,
+      "user_id": 3,
+      "task": "Javascript task",
+      "due_date": {
+        "$date": "2020-10-15T18:30:00.000Z"
+      },
+      "submitted": false
+    },
+    {
+      "_id": {
+        "$oid": "66f0533e75fa92ed1ab4f2aa"
+      },
+      "task_id": 3,
+      "topic_id": 3,
+      "user_id": 8,
+      "task": "Javascript task",
+      "due_date": {
+        "$date": "2020-10-13T18:30:00.000Z"
+      },
+      "submitted": true
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66f0528975fa92ed1ab4f297"
+  },
+  "topic_id": 4,
+  "topic": "React",
+  "topic_date": {
+    "$date": "2020-10-25T18:30:00.000Z"
+  },
+  "taskinfo": [
+    {
+      "_id": {
+        "$oid": "66f0533e75fa92ed1ab4f2a6"
+      },
+      "task_id": 4,
+      "topic_id": 4,
+      "user_id": 4,
+      "task": "React task",
+      "due_date": {
+        "$date": "2020-10-20T18:30:00.000Z"
+      },
+      "submitted": true
+    },
+    {
+      "_id": {
+        "$oid": "66f0533e75fa92ed1ab4f2ab"
+      },
+      "task_id": 4,
+      "topic_id": 4,
+      "user_id": 9,
+      "task": "React task",
+      "due_date": {
+        "$date": "2020-10-21T18:30:00.000Z"
+      },
+      "submitted": false
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "66f0528975fa92ed1ab4f298"
+  },
+  "topic_id": 5,
+  "topic": "NodeJs",
+  "topic_date": {
+    "$date": "2020-10-28T18:30:00.000Z"
+  },
+  "taskinfo": [
+    {
+      "_id": {
+        "$oid": "66f0533e75fa92ed1ab4f2a7"
+      },
+      "task_id": 5,
+      "topic_id": 5,
+      "user_id": 5,
+      "task": "Node task",
+      "due_date": {
+        "$date": "2020-10-27T18:30:00.000Z"
+      },
+      "submitted": true
+    },
+    {
+      "_id": {
+        "$oid": "66f0533e75fa92ed1ab4f2ac"
+      },
+      "task_id": 5,
+      "topic_id": 5,
+      "user_id": 10,
+      "task": "Node task",
+      "due_date": {
+        "$date": "2020-10-28T18:30:00.000Z"
+      },
+      "submitted": true
+    }
+  ]
+}]
